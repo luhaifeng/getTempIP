@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+body{ width:100%; height:100%;}
+/*左侧标题部分*/
+a{ font-size:12px; text-decoration:none;}
+.ny_bt{ width:6%; min-height:886px; float:left; background-color:#454852; }
+.ny_bt li{ width:100%;}
+.ny_bt li a{  display:block; width:100%; color:#989dac; }
+.ny_bt li a:hover{color:#fff; background:#545a70;}
+.ny_bt li a span{ display:block;  text-align:center; padding:43px 0 15px 0;}
+.ny_bt li a.bt1{  background-image:url(../images/xiaobiao_03.png); background-repeat:no-repeat; background-position: center 15px; }
+.ny_bt li a.xuanding{background-color:#43acf6; color:#fff;}
+.ny_bt li a.bt1:hover{  background-image:url(../images/xiaobiao_03.png); background-repeat:no-repeat; background-position: center 15px;}
+.ny_bt li a.bt2{  background-image:url(../images/xiaobiao_19.png); background-repeat:no-repeat; background-position: center 15px;}
+.ny_bt li a.bt22{  background-image:url(../images/xiaobiao_199.png); background-repeat:no-repeat; background-position: center 15px;}
+.ny_bt li a.bt2:hover{  background-image:url(../images/xiaobiao_199.png); background-repeat:no-repeat; background-position: center 15px;}
+.ny_bt li a.bt3{  background-image:url(../images/xiaobiao_30.png); background-repeat:no-repeat; background-position: center 15px;}
+.ny_bt li a.bt33{  background-image:url(../images/xiaobiao_300.png); background-repeat:no-repeat; background-position: center 15px;}
+.ny_bt li a.bt3:hover{  background-image:url(../images/xiaobiao_300.png); background-repeat:no-repeat; background-position: center 15px;}
+.ny_bt li a.bt4{  background-image:url(../images/kaoshi_03.png); background-repeat:no-repeat; background-position: center 15px;}
+.ny_bt li a.bt4:hover{  background-image:url(../images/kaoshi_033.png); background-repeat:no-repeat; background-position: center 15px;}
+.ny_bt li a.bt5{  background-image:url(../images/xiaobiao_40.png); background-repeat:no-repeat; background-position: center 15px;}
+.ny_bt li a.bt5:hover{  background-image:url(../images/xiaobiao_400.png); background-repeat:no-repeat; background-position: center 15px;}
+/*目录部分*/
+.ny_list{ width:20%; background:#fbfbfb; min-height:886px; float:left; border-right:4px solid #e5e5e5;}
+.ny_list ul{ padding-right:10px;}
+
+.ny_list li{ width:100%; margin-top:10px;}
+.ny_list li a{ background-color:#f3f3f3; background-image:url(../images/xiaobiao_11.png); background-repeat:no-repeat; background-position:10px 10px; display:block; height:150%; padding:10px 0 10px 35px;  margin-left:10px; color:#494949;}
+.ny_list li a:hover{ background-color:#545a70; background-image:url(../images/xiaobiao_111.png); background-repeat:no-repeat; background-position:10px 10px; color:#fff;}
+.ny_list li ul{ margin-left:30px;}
+.ny_list li .one li a{ background:none; padding:3px 0 3px 0px;}
+.ny_list li .one li a img{ margin-right:10px; vertical-align:middle; margin-top:-3px; }
+.ny_list li .one li a:hover{ color:#494949;  background:none; background-image:none;}
+/*主要内容区域*/
+.ny_content{ width:100%; float:left;}
+.nr{ margin-left:0px;}
+.cont_lb ul{ border-bottom:1px solid #d2cfcf; overflow:hidden; margin-top:10px; padding-bottom:10px; padding-left:10px;}
+.cont_lb li{ float:left; margin-right:10px;}
+.cont_lb li a{ color:#a19a9a; border:1px solid #d2cfcf; display:block; height:23px; width:auto; line-height:23px; padding:0 8px; border-radius:3px;}
+.cont_lb li a.xz{ background:#f3f3f3; color:#494949;}
+.cont_lb li a.sj{ background:#43acf6; color:#fff; border:1px solid #e5e5e5;}
+.name{margin:20px 0 15px 0; overflow:hidden; padding-left:10px;}
+.name h3{ font-size:15px; font-family:"微软雅黑"; clear:both; padding-top:20px; }
+.name span{ display:block; float:left; color:#43acf6; font-size:16px; font-family:"微软雅黑"; line-height:28px; margin-right:20px; font-weight:bold; }
+.name span.zsd{  margin-right:250px;}
+.name .dr{ display:block; float:left; color:#43acf6; font-size:16px; font-family:"微软雅黑"; line-height:28px; margin-right:20px; font-weight:bold; vertical-align:middle;}
+.name .dr img{ vertical-align:middle; margin-right:8px;}
+.name .fd{ margin-right:10px;}
+.name form{ float:right;}
+.name form img{ vertical-align:top;}
+.name form input[type="text"]{ border:1px solid #e5e5e5; width:183px; height:28px; line-height:28px; color:#868484; vertical-align:top; padding-left:5px;}
+.name form label{ height: 30px; line-height: 30px; color: #4a4a4a; font-family: "微软雅黑"; font-size: 16px;padding-right:15px;}
+.name form input[type="checkbox"]{ border:1px solid #e5e5e5; width:15px; height:30px; line-height:30px; color:#868484; vertical-align:top; padding-left:5px;}
+.wjj{ clear:both;}
+.wjj table{ clear:both; width:100%;}
+.wjj table td{ padding-left:10px;}
+.wjj table a{ display:block; padding:12px 0; color:#2d2d2d; font-size:14px; font-family:"微软雅黑";  float:left;}
+.wjj table a.xb{ width:8%; float:right;}
+.wjj table a.xb img{ margin-left:15px;}
+.wjj table a span{ display:block; float:right; vertical-align:middle; padding-right:10px;}
+
+.wjj table tr.biaot{ font-size:15px; font-family:"微软雅黑"; color:#2d2d2d; margin-bottom:20px; overflow:hidden; background-color:#dbdada; }
+.wjj table tr.biaot td{ padding:0 0 0px 10px; line-height:40px; font-weight:bold;}
+.wjj table tr.odd{ background:#f2f2f2; }
+.wjj table a span img{ padding-left:15px;}
+/*启动模块样式*/
+.lit2_top{ margin-top:10px; overflow:hidden;}
+.lit_l{ float:left; width:50%; }
+.lit_l h4{ color:#333; font-weight:bold; margin-bottom:23px;}
+.lit_l a{ display:block; color:#fff; font-size:14px; font-weight:bold; width:100px; background:#545a70; line-height:30px; padding-left:10px;}
+.lit_l a img{ vertical-align:middle; margin-right:6px;}
+.lit_z{ float:left; width:30%;}
+.lit_r{ float:right; width:auto; }
+.lit_r a{ display:block; line-height:25px; color:#000; text-align:center; float:right;}
+/*试题库——修改*/
+.kuang{ width: 100%; height:100%;}
+.edit_l{ width:50%; border-right:1px solid #454852; float:left;}
+.edit_l table{ padding-left:10px; margin-left:10px;}
+.edit_l tr{ height:40px; font-size:14px; color:#2d2d2d; font-family:"微软雅黑";}
+.edit_l tr.xx{ height:35px;  }
+.edit_l p{ margin:20px 0 0 100px;}
+.edit_l p .bc{ display:block; height:20px; line-height:20px;  background:#43acf6; border-radius:3px; padding:0 8px; color:#fff; width:40px; text-align:center; float:left; margin-right:15px;}
+.edit_l td input[type="text"]{ border:1px solid #e5e5e5; width:175px; height:24px; line-height:24px; color:#454852; padding:0 3px; margin-right:10px; background:#f3f3f3; margin-left:5px;}
+.edit_l td textarea{ border:1px solid #e5e5e5; color:#454852; padding:0 3px; margin-right:10px; background:#f3f3f3; margin-left:5px;}
+.edit_r{ float:left; width:49%;}
+.tishi{ color:#989dac; font-size:18px; font-family:"微软雅黑"; padding-left:55px;}
+.tishi a{ color:#989dac; font-size:18px; font-family:"微软雅黑"; display:block; width:100%;}
+.tishi span{ display:block; width:100%;}
+.tishi a.tp{ width:240px; height:240px; background:#f3f3f3; margin-top:40px;}
+/*试卷*/
+.st1{   clear:both; overflow:hidden;}
+.st1 .bj{ height:45px; background:#f2f2f2; line-height:45px;}
+.st1 p{ float:left; width:75%; padding-left:10px;}
+.st1 span{ display:block; float:left;}
+.st1 a{ display:block; float:right; vertical-align:middle;}
+.st1 a img{ vertical-align:middle; padding-right:10px;}
+.st1 pre{ padding-left:10px; line-height:25px; clear:both; }

@@ -1,0 +1,27 @@
+﻿<ehcache updateCheck="false" dynamicConfig="false">
+    <diskStore path="java.io.tmpdir"/>
+    <defaultCache
+        maxElementsInMemory="1000"
+        eternal="false"
+        timeToIdleSeconds="120"
+        timeToLiveSeconds="120"
+        overflowToDisk="true"
+        />
+    
+    <cache name="ipPool"
+        maxElementsInMemory="500"
+        eternal="true"
+        overflowToDisk="true"
+       	diskPersistent="true"
+        timeToIdleSeconds="1440"
+        timeToLiveSeconds="1440"
+        />       
+    
+    <!--cache
+       name="comments"
+       maxElementsInMemory="0"
+       eternal="true"
+       overflowToDisk="true"
+       diskPersistent="true"
+       memoryStoreEvictionPolicy="LFU" --><!-- cacheEventListenerFactory class="com.fractal.gateway.util.EhcacheListenerFactory" properties=""/--><!--此为监听事件，可去掉--><!--/cache-->
+</ehcache>

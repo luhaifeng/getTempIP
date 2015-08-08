@@ -1,0 +1,32 @@
+<configuration scan="true" scanPeriod="60 seconds" debug="true">
+    <timestamp key="bySecond" datePattern="yyyy-MM-dd HH:mm:ss"/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%d][%thread] %-5level %logger{100} - %msg%n</pattern>
+        </encoder>
+    </appender>
+	<!-- 客户端访问信息记录：每天生成一个日志文件，保存30天的日志文件 -->
+	<appender name="ROLLINGFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">   
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">   
+	      <fileNamePattern>logs/getTempipServerlogFile.%d{yyyy-MM-dd}.log</fileNamePattern>   
+	      <maxHistory>30</maxHistory>
+	    </rollingPolicy>   
+	    <encoder><pattern>[%d{${bySecond}}][%-5level]%logger{36} - %msg%n</pattern></encoder>   
+	</appender>
+	
+    <logger name="net.paoding" level="info" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <logger name="com.menkj" level="info" additivity="true">
+        <appender-ref ref="ROLLINGFILE" />
+    </logger>
+ 
+    <logger name="org.springframework" level="error" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
